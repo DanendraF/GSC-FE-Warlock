@@ -1,0 +1,96 @@
+:root {
+  --shadow: 0px 4px 4px rgba(0, 0, 0, 0.250);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: #d9d9d917;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-nav a {
+  color: white;
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 0.9rem;
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid black;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.home {
+  min-height: 100vh;
+}
+
+.home .content h1 {
+  font-size: 5em;
+  text-shadow: var(--shadow);
+  font-weight: 600;
+}
+
+.home .content p {
+  font-size: 2rem;
+}
+
+.home .content .view {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.550);
+    border-radius: 11px;
+    box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.5);;
+  }
+
+/* login */
+.tu{
+  background-color: rgba(0, 0, 0, 0.400);
+  width: 40%;
+  box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.5);
+}
+.global{
+  min-height: 100vh;
+}
+
+/* comunity */
+.likekom .like{
+  color: black;
+  background-color: #F3F3F3;
+}
+.likekom .komen{
+  color: black;
+  background-color: #F3F3F3;
+}
+
+
+

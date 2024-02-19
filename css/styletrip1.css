@@ -1,0 +1,136 @@
+:root {
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.250);
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(/img/bgbromo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .navbar {
+    background-color: #d9d9d917;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar-nav a {
+    color: white;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .home {
+    min-height: 100vh;
+  }
+  
+  .home .content h1 {
+    font-size: 5em;
+    text-shadow: var(--shadow);
+    font-weight: 600;
+  }
+  
+  .home .content p {
+    font-size: 2rem;
+  }
+  
+  .home .content .view {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.550);
+      border-radius: 11px;
+      box-shadow: 0px 7px 33px rgba(0, 0, 0, 0.5);;
+    }
+
+
+/* tripmenu */
+
+.banner {
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: calc(180px + 20px); /* Tinggi navbar + margin-bottom */
+}
+
+.banner h1 {
+    font-size: 3.5em; 
+    color: #eee;
+}
+
+.banner p {
+    font-size: 2em; 
+    color: #eee;
+}
+
+
+.container {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.trips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.trip {
+    flex: 0 0 calc(30% - 20px); 
+    background-color: #eee;
+    padding: 60px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.trip h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+
+.trip p {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.button {
+    display: block;
+    background-color: #333;
+    color: #fff;
+}
+

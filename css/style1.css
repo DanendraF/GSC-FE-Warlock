@@ -1,0 +1,73 @@
+:root {
+    --shadow: 0px 4px 4px rgba(0, 0, 0, 0.250);
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .navbar {
+    background-color: #d9d9d917;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar-nav a {
+    color: white;
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+  }
+  .navbar-nav a:hover{
+    color: white;
+  }
+  
+  .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  .boxgam {
+    width: 100%; 
+    height: 20rem; 
+    border-radius: 5px; 
+    overflow: hidden;
+    position: relative;
+}
+.boxgam .image {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: translate(0%, -38%);
+}
+/* detail */
+.detail h1{
+  font-weight: 600;
+}  
+.row .bungkusgambar{
+    height: 35rem; 
+    border-radius: 5px; 
+    overflow: hidden;
+    position: relative;
+    background-color: aquamarine;
+}
+.row .bungkusgambar img{
+  transform: translate(-40%, -20%);
+  object-fit: cover;
+}
+  
